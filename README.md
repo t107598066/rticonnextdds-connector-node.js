@@ -11,6 +11,9 @@ ln -s node-v8.16.0-linux-x64/bin/node /usr/bin/node
 
 ## 安裝套件
 npm install sleep
+
 npm install rticonnextdds-connector
+
 npm install mqtt
+
 npm install request
