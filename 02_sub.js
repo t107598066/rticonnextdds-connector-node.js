@@ -76,7 +76,7 @@ var total_period=0;
 var jitter=0;
 var ss_rx=0;
 var locationdata=0;
-//process.send("send from 01_sub");
+process.send("send from 01_sub");
 
 var i =0;
 function push(ID,xx){
@@ -177,7 +177,7 @@ async function main_loop() {
             jitter:jitter/1000000,
         }];
         //console.log("performance:",performance);
-        //upLoadFile(JSON.stringify(performance));//upload t3-location & delay jitter
+        upLoadFile(JSON.stringify(performance));//upload t3-location & delay jitter
 
         console.log("=================================");
 
@@ -198,7 +198,8 @@ async function main_loop() {
 async function upLoadFile(obj)
 {
 	await request({
-		uri: "http://3.84.218.73:8081/coordinate",
+        uri: "http://3.86.149.253:8081/coordinate",
+		    //uri: "http://3.84.218.73:8081/coordinate",
         //uri: "http://140.124.182.21:8081/coordinate",
 		method: "POST",
 		form: {

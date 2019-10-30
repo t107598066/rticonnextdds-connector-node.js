@@ -50,7 +50,7 @@ client.on('connect',function(){
 client.on('message',function(topic,msg){
     var location_info=msg.toString();
     location_info = JSON.parse(location_info);
-      console.log("AAA",location_info);
+      // console.log("AAA",location_info);
     if(location_info.position.x !== 'NaN')
     {
       console.log("1111main_loop",location_info);
