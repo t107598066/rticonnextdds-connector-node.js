@@ -199,7 +199,7 @@ async function upLoadFile(obj)
 {
 	await request({
         uri: "http://3.86.149.253:8081/coordinate",
-		    //uri: "http://3.84.218.73:8081/coordinate",
+		//uri: "http://3.84.218.73:8081/coordinate",
         //uri: "http://140.124.182.21:8081/coordinate",
 		method: "POST",
 		form: {
