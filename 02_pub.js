@@ -71,6 +71,7 @@ var clock=0;
 var localtime=0;
 var i =0;
 
+
 async function main_loop(location_info) {
     if(typeof location_info !== 'undefined'){
       console.log("main_loop",location_info);
