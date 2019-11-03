@@ -90,7 +90,6 @@ function pop(ID){
     return listp[ID];
 }
 
-
 async function main_loop() {
     // We clear the instance associated to this output
     //   otherwise the sample will have the values set in the
